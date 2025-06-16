@@ -1,0 +1,11 @@
+# IDE files
+.idea/
+# Byte-compiled
+__pycache__/
+*.pyc
+# Virtualenv
+venv/
+# Data and models
+data/
+models/
+mlruns/
