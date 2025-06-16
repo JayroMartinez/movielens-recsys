@@ -9,13 +9,13 @@ ZIP_PATH = DATA_DIR / "ml-100k.zip"
 
 def download():
     if ZIP_PATH.exists():
-        print("Dataset ya descargado.")
+        print("Dataset already downloaded")
         return
-    print("Descargando MovieLens-100K…")
+    print("Downloading MovieLens-100K…")
     urllib.request.urlretrieve(URL, ZIP_PATH)
     with zipfile.ZipFile(ZIP_PATH, "r") as zf:
         zf.extractall(DATA_DIR)
-    print("Hecho.")
+    print("Done")
 
 if __name__ == "__main__":
     download()

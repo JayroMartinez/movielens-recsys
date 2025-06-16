@@ -1,7 +1,15 @@
-pandas
-numpy
-scikit-learn
-implicit            # ALS
+# core data / ML
+pandas          # data wrangling
+numpy           # numerical backend
+scikit-learn    # train / test split, metrics, helpers
+xgboost         # gradient-boosted trees
+
+# experiment tracking
 mlflow
+
+# API layer
 fastapi
 uvicorn[standard]
+
+# parquet i/o
+pyarrow
